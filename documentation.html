@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>mine.scss</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/documentation.css">
     </head>
     <body>
         <header>
-            <h1><a href=""><span>@</span>MI<span>xi</span>NE</h1></a>
+            <h1><a href="index.html"><span>@</span>MI<span>xi</span>NE</h1></a>
             <ul>
-                <li>Home</li>
-                <li class="now">Documentation</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="now"><a href="#">Documentation</a></li>
             </ul>
         </header>
         <div class="wrapper" id="app">
@@ -24,16 +25,18 @@
                 <section>
                     <h2>btn-fill</h2>
                     <h3>Example:</h3>
-                    <div class="btn-fill1">button1</div>
-                    <div class="btn-fill2">button2</div>
-                    <div class="btn-fill3">button3</div>
-                    <div class="btn-fill4">button4</div>
-                    <div class="btn-fill5">button5</div>
+                    <div class="examples">
+                        <div class="btn-fill1">button1</div>
+                        <div class="btn-fill2">button2</div>
+                        <div class="btn-fill3">button3</div>
+                        <div class="btn-fill4">button4</div>
+                        <div class="btn-fill5">button5</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
             <span class="selecter">selecter</span> {
-                @include btn-outline(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>);
+                @include btn-fill(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>);
             }
                                                         </code></pre>
                     </div>
@@ -46,11 +49,13 @@
                 <section>
                     <h2>btn-outline</h2>
                     <h3>Example:</h3>
-                    <div class="btn-outline1">button1</div>
-                    <div class="btn-outline2">button2</div>
-                    <div class="btn-outline3">button3</div>
-                    <div class="btn-outline4">button4</div>
-                    <div class="btn-outline5">button5</div>
+                    <div class="examples">
+                        <div class="btn-outline1">button1</div>
+                        <div class="btn-outline2">button2</div>
+                        <div class="btn-outline3">button3</div>
+                        <div class="btn-outline4">button4</div>
+                        <div class="btn-outline5">button5</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
@@ -67,11 +72,13 @@
                 <section>
                     <h2>bubble-top</h2>
                     <h3>Example:</h3>
-                    <div class="bubble-top1">bubble</div>
-                    <div class="bubble-top2">bubble</div>
-                    <div class="bubble-top3">bubble</div>
-                    <div class="bubble-top4">bubble</div>
-                    <div class="bubble-top5">bubble</div>
+                    <div class="examples">
+                        <div class="bubble-top1">bubble</div>
+                        <div class="bubble-top2">bubble</div>
+                        <div class="bubble-top3">bubble</div>
+                        <div class="bubble-top4">bubble</div>
+                        <div class="bubble-top5">bubble</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
@@ -90,11 +97,13 @@
                 <section>
                     <h2>bubble-bottom</h2>
                     <h3>Example:</h3>
-                    <div class="bubble-bottom1">bubble</div>
-                    <div class="bubble-bottom2">bubble</div>
-                    <div class="bubble-bottom3">bubble</div>
-                    <div class="bubble-bottom4">bubble</div>
-                    <div class="bubble-bottom5">bubble</div>
+                    <div class="examples">
+                        <div class="bubble-bottom1">bubble</div>
+                        <div class="bubble-bottom2">bubble</div>
+                        <div class="bubble-bottom3">bubble</div>
+                        <div class="bubble-bottom4">bubble</div>
+                        <div class="bubble-bottom5">bubble</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
@@ -114,11 +123,13 @@
                 <section>
                     <h2>bubble-left</h2>
                     <h3>Example:</h3>
-                    <div class="bubble-left1">bubble</div>
-                    <div class="bubble-left2">bubble</div>
-                    <div class="bubble-left3">bubble</div>
-                    <div class="bubble-left4">bubble</div>
-                    <div class="bubble-left5">bubble</div>
+                    <div class="examples">
+                        <div class="bubble-left1">bubble</div>
+                        <div class="bubble-left2">bubble</div>
+                        <div class="bubble-left3">bubble</div>
+                        <div class="bubble-left4">bubble</div>
+                        <div class="bubble-left5">bubble</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
@@ -134,13 +145,15 @@
                     </div>
                 </section>
                 <section>
-                    <h2>bubble-top</h2>
+                    <h2>bubble-right</h2>
                     <h3>Example:</h3>
-                    <div class="bubble-right1">bubble</div>
-                    <div class="bubble-right2">bubble</div>
-                    <div class="bubble-right3">bubble</div>
-                    <div class="bubble-right4">bubble</div>
-                    <div class="bubble-right5">bubble</div>
+                    <div class="examples">
+                        <div class="bubble-right1">bubble</div>
+                        <div class="bubble-right2">bubble</div>
+                        <div class="bubble-right3">bubble</div>
+                        <div class="bubble-right4">bubble</div>
+                        <div class="bubble-right5">bubble</div>
+                    </div>
                     <h3>How to use:</h3>
                     <div class="editer">
                         <pre><code>
@@ -161,7 +174,7 @@
         
 
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
         
     </body>
 </html>

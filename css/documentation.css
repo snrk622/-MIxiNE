@@ -40,6 +40,11 @@ header {
       line-height: 60px;
       opacity: 0.75;
       cursor: pointer; }
+      header ul li a {
+        text-decoration: none;
+        color: white; }
+        header ul li a:visited {
+          color: white; }
     header ul .now {
       font-weight: bold;
       opacity: 1; }
@@ -105,14 +110,18 @@ section {
     margin: 0; }
   section h3 {
     color: #a0a0a0; }
+  section .examples {
+    width: 100%;
+    padding: 15px;
+    overflow-x: auto;
+    white-space: nowrap; }
 
 .editer {
   background-color: #2c2c2c;
   color: #e0e0e0;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  overflow-x: auto;
+  white-space: nowrap; }
 
 .selecter {
   background-color: #f0908d;
@@ -143,7 +152,7 @@ section {
 
 .desc {
   font-size: 14px;
-  color: #404040; }
+  color: #a0a0a0; }
 
 .btn-fill1 {
   display: inline-block;
