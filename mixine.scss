@@ -1,0 +1,100 @@
+@mixin btn {
+    display: inline-block;
+    margin: 3px 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@mixin btn-fill($backgroundColor: #0095d9, $color: #fff) {
+    @include btn;
+    background-color: $backgroundColor;
+    color: $color;
+    &:hover {
+        background-color: darken($backgroundColor, 10%);
+    }
+}
+
+@mixin btn-outline($color: #0095d9) {
+    @include btn;
+    border: 1px solid $color;
+    color: $color;
+    &:hover {
+        background-color: $color;
+        color: white;
+    }
+}
+
+@mixin bubble {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@mixin bubble-top($backbround: #0095d9, $color: white, $fromLeft: 50%) {
+    @include bubble;
+    background-color: $backbround;
+    color: $color;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: $fromLeft;
+        margin-left: -10px;
+        border: 10px solid transparent;
+        border-top: 10px solid $backbround;
+    }
+}
+
+@mixin bubble-bottom($backbround: #0095d9, $color: white, $fromLeft: 50%) {
+    @include bubble;
+    background-color: $backbround;
+    color: $color;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: $fromLeft;
+        margin-left: -10px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $backbround;
+    }
+}
+
+@mixin bubble-left($backbround: #0095d9, $color: white) {
+    @include bubble;
+    background-color: $backbround;
+    color: $color;
+    margin: 0 5px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-right: 10px solid $backbround;
+    }
+}
+
+@mixin bubble-right($backbround: #0095d9, $color: white) {
+    @include bubble;
+    background-color: $backbround;
+    color: $color;
+    margin: 0 5px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-left: 10px solid $backbround;
+    }
+}
+

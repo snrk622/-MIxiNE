@@ -1,0 +1,241 @@
+@import 'mine.scss';
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    background-color: #00a497;
+    box-shadow: 0px -8px 8px -1px darken(#00a497, 5%) inset;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    h1 {
+        font-size: 30px;
+        line-height: 60px;
+        margin: 0 20px;
+        a {
+            text-decoration: none;
+            color: white;
+            &:visited {
+                color: white;
+            }
+            span {
+                opacity: 0.5;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+            color: white;
+            list-style: none;
+            margin: 0 10px;
+            font-size: 16px;
+            line-height: 60px;
+            opacity: 0.75;
+            cursor: pointer;
+        }
+        .now {
+                font-weight: bold;
+                opacity: 1;
+            }
+    }
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.left {
+    margin-top: 60px;
+    width: 15%;
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #a0a0a0;
+    .search {
+        display: inline-block;
+        width: 80%;
+        height: 40px;
+        margin: 20px 10%;
+        border-radius: 5px;
+        outline: 0;
+        border: 1px solid #a0a0a0;
+        font-size: 16px;
+        line-height: 40px;
+        box-sizing: border-box;
+        padding: 5%;
+        color: #404040;
+    }
+    ul {
+        border-top: 1px solid #a0a0a0;
+        padding: 20px 15%;
+        margin: 0;
+        color: #404040;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: #404040; 
+                &:visited {
+                    color: #404040; 
+                }
+            }
+        }
+    }
+}
+.right {
+    margin-top: 60px;
+    width: 85%;
+    box-sizing: border-box;
+}
+section {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+    }
+    h3 {
+        color: #a0a0a0;
+    }
+}
+.editer {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+}
+.selecter {
+    background-color: #f0908d;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+}
+.arg1 {
+    background-color: #84b9cb;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+}
+.arg2 {
+    background-color: #68be8d;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+}
+.arg3 {
+    background-color: #f8e58c;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: #606060;
+}
+.caution {
+    border-bottom: 1px dashed #f0908d;
+}
+.desc {
+    font-size: 14px;
+    color: #404040;
+}
+.btn-fill1 {
+    @include btn-fill();
+}
+.btn-fill2 {
+    @include btn-fill(#606060);
+}
+.btn-fill3 {
+    @include btn-fill(#00a497, #83ccd2);
+}
+.btn-fill4 {
+    @include btn-fill(#c53d43,#ff8882);
+}
+.btn-fill5 {
+    @include btn-fill(#fcc800,#606060);
+}
+.btn-outline1 {
+    @include btn-outline();
+}
+.btn-outline2 {
+    @include btn-outline(#606060);
+}
+.btn-outline3 {
+    @include btn-outline(#00a497);
+}
+.btn-outline4 {
+    @include btn-outline(#c53d43);
+}
+.btn-outline5 {
+    @include btn-outline(#606060);
+}
+.bubble-top1 {
+    @include bubble-top();
+}
+.bubble-top2 {
+    @include bubble-top(#606060);
+}
+.bubble-top3 {
+    @include bubble-top(#00a497, #83ccd2, 20%);
+}
+.bubble-top4 {
+    @include bubble-top(#c53d43, #ff8882);
+}
+.bubble-top5 {
+    @include bubble-top(#fcc800, #606060, 80%);
+}
+.bubble-bottom1 {
+    @include bubble-bottom();
+}
+.bubble-bottom2 {
+    @include bubble-bottom(#606060);
+}
+.bubble-bottom3 {
+    @include bubble-bottom(#00a497, #83ccd2, 20%);
+}
+.bubble-bottom4 {
+    @include bubble-bottom(#c53d43, #ff8882);
+}
+.bubble-bottom5 {
+    @include bubble-bottom(#fcc800, #606060, 80%);
+}
+.bubble-left1 {
+    @include bubble-left();
+}
+.bubble-left2 {
+    @include bubble-left(#606060);
+}
+.bubble-left3 {
+    @include bubble-left(#00a497, #83ccd2);
+}
+.bubble-left4 {
+    @include bubble-left(#c53d43, #ff8882);
+}
+.bubble-left5 {
+    @include bubble-left(#fcc800, #606060);
+}
+.bubble-right1 {
+    @include bubble-right();
+}
+.bubble-right2 {
+    @include bubble-right(#606060);
+}
+.bubble-right3 {
+    @include bubble-right(#00a497, #83ccd2);
+}
+.bubble-right4 {
+    @include bubble-right(#c53d43, #ff8882);
+}
+.bubble-right5 {
+    @include bubble-right(#fcc800, #606060);
+}
+
+

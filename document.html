@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>mine.scss</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href=""><span>@</span>MI<span>xi</span>NE</h1></a>
+            <ul>
+                <li>Home</li>
+                <li class="now">Documentation</li>
+            </ul>
+        </header>
+        <div class="wrapper" id="app">
+            <div class="left">
+                <input type="text" class="search" placeholder="search...">
+                <ul>
+                    <li><a href="">Buttons</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <section>
+                    <h2>btn-fill</h2>
+                    <h3>Example:</h3>
+                    <div class="btn-fill1">button1</div>
+                    <div class="btn-fill2">button2</div>
+                    <div class="btn-fill3">button3</div>
+                    <div class="btn-fill4">button4</div>
+                    <div class="btn-fill5">button5</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+            <span class="selecter">selecter</span> {
+                @include btn-outline(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>);
+            }
+                                                        </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color".</p>
+                        <p><span class="arg2">arg2</span>: Specify "color".</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>btn-outline</h2>
+                    <h3>Example:</h3>
+                    <div class="btn-outline1">button1</div>
+                    <div class="btn-outline2">button2</div>
+                    <div class="btn-outline3">button3</div>
+                    <div class="btn-outline4">button4</div>
+                    <div class="btn-outline5">button5</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+            <span class="selecter">selecter</span> {
+                @include btn-outline(<span class="arg1">arg1</span>);
+            }
+                                    </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color" and "border-color".</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>bubble-top</h2>
+                    <h3>Example:</h3>
+                    <div class="bubble-top1">bubble</div>
+                    <div class="bubble-top2">bubble</div>
+                    <div class="bubble-top3">bubble</div>
+                    <div class="bubble-top4">bubble</div>
+                    <div class="bubble-top5">bubble</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+                <span class="selecter">selecter</span> {
+                    @include bubble-top(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>, <span class="arg3">arg3</span>);
+                }
+                                    </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color".</p>
+                        <p><span class="arg2">arg2</span>: Specify "color".</p>
+                        <p><span class="arg3">arg3</span>: Specify "left". My recommendation is from '20%' to '80%'. <span class="caution">Please put "%" at the end.</span></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>bubble-bottom</h2>
+                    <h3>Example:</h3>
+                    <div class="bubble-bottom1">bubble</div>
+                    <div class="bubble-bottom2">bubble</div>
+                    <div class="bubble-bottom3">bubble</div>
+                    <div class="bubble-bottom4">bubble</div>
+                    <div class="bubble-bottom5">bubble</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+                <span class="selecter">selecter</span> {
+                    @include bubble-bottom(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>, <span class="arg3">arg3</span>);
+                }
+                                                </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color".</p>
+                        <p><span class="arg2">arg2</span>: Specify "color".</p>
+                        <p><span class="arg3">arg3</span>: Specify "left". My recommendation is from '20%' to '80%'. <span
+                                class="caution">Please put "%" at the end.</span></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>bubble-left</h2>
+                    <h3>Example:</h3>
+                    <div class="bubble-left1">bubble</div>
+                    <div class="bubble-left2">bubble</div>
+                    <div class="bubble-left3">bubble</div>
+                    <div class="bubble-left4">bubble</div>
+                    <div class="bubble-left5">bubble</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+                <span class="selecter">selecter</span> {
+                    @include bubble-left(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>);
+                }
+                                                </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color".</p>
+                        <p><span class="arg2">arg2</span>: Specify "color".</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>bubble-top</h2>
+                    <h3>Example:</h3>
+                    <div class="bubble-right1">bubble</div>
+                    <div class="bubble-right2">bubble</div>
+                    <div class="bubble-right3">bubble</div>
+                    <div class="bubble-right4">bubble</div>
+                    <div class="bubble-right5">bubble</div>
+                    <h3>How to use:</h3>
+                    <div class="editer">
+                        <pre><code>
+                <span class="selecter">selecter</span> {
+                    @include bubble-right(<span class="arg1">arg1</span>, <span class="arg2">arg2</span>);
+                }
+                                                </code></pre>
+                    </div>
+                    <div class="desc">
+                        <p><span class="selecter">selecter</span>: Specify the selector to which you want to apply the style.</p>
+                        <p><span class="arg1">arg1</span>: Specify "background-color".</p>
+                        <p><span class="arg2">arg2</span>: Specify "color".</p>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
